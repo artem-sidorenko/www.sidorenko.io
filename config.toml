@@ -1,0 +1,41 @@
+baseurl       = "/"
+title         = "Artem Sidorenko"
+relativeURLs  = true
+theme         = "bootstrap-premium"
+paginate      = 5
+
+[permalinks]
+  post = "/:year/:month/:title/"
+  code = "/:slug/"
+
+[taxonomies]
+tag = "tags"
+
+[author]
+  name = "Artem Sidorenko"
+  email = "artem@posteo.de"
+
+[params]
+switchlang = false
+showRightSidebar = true
+BrandImage = ""
+footline = "code with <i class='fa fa-heart'></i>"
+mailmunchid = ""
+sumomeid = ""
+mathjax = ""
+
+[params.theme]
+name = "default"
+
+[menu]
+  [[menu.main]]
+  identifier = "blog"
+  name       = "Blog"
+  url        = "/"
+  weight     = 1
+
+  [[menu.main]]
+  identifier = "github"
+  name       = "GitHub"
+  url        = "https://github.com/artem-sidorenko"
+  weight     = 2
