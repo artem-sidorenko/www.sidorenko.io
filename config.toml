@@ -3,6 +3,7 @@ title         = "Artem Sidorenko"
 relativeURLs  = true
 theme         = "bootstrap-premium"
 paginate      = 5
+copyright     = "Artem Sidorenko"
 
 [permalinks]
   post = "/:year/:month/:title/"
@@ -19,7 +20,7 @@ tag = "tags"
 switchlang = false
 showRightSidebar = true
 BrandImage = ""
-footline = "code with <i class='fa fa-heart'></i>"
+footline = "Powered by [hugo](http://gohugo.io/) with customized [bootstrap-premium](https://github.com/appernetic/hugo-bootstrap-premium/) theme"
 mailmunchid = ""
 sumomeid = ""
 mathjax = ""
