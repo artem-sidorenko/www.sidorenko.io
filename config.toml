@@ -24,6 +24,8 @@ footline = "Powered by [hugo](http://gohugo.io/) with customized [bootstrap-prem
 mailmunchid = ""
 sumomeid = ""
 mathjax = ""
+googleplus = ""
+twitter = ""
 
 [params.theme]
 name = "default"
