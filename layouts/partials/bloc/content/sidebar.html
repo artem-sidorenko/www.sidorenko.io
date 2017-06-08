@@ -1,0 +1,55 @@
+<div>
+  {{ if and .IsPage (and (ne .Params.toc false) .TableOfContents) }}
+  <section class="panel panel-default">
+    <div class="panel-heading"><b>Table of contents</b></div>
+    <div style="padding: 5px 0px">
+      {{ .TableOfContents }}
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+    <b>Recent posts</b>
+    <div style="float: right"><a href="{{ "/post/" | relLangURL }}">- full list -</a></div>
+    </div>
+    <div style="padding: 5px 0px">
+    <div class="content">
+      {{ .Data.Plural }}
+      <ul>
+      {{ range first 10 (where (where .Site.Pages "Type" "post") "IsPage" true) }}
+        <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+      </ul>
+    </div>
+    </div>
+  </section>
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+    <b>Tags</b>
+    <div style="float: right"><a href="{{ "/tags/" | relLangURL }}">- full list -</a></div>
+    </div>
+{{ if not (eq (len $.Site.Taxonomies.tags) 0) }}
+    {{ $fontUnit := "rem" }}
+    {{ $largestFontSize := 2.0 }}
+    {{ $smallestFontSize := 1.0 }}
+    {{ $fontSpread := sub $largestFontSize $smallestFontSize }}
+    {{ $max := len (index $.Site.Taxonomies.tags.ByCount 0).Pages }}
+    {{ $min := len (index $.Site.Taxonomies.tags.ByCount.Reverse 0).Pages }}
+    {{ $spread := sub $max $min }}
+    {{ $fontStep := div $fontSpread $spread }}
+
+    <div id="tag-cloud" style="padding: 5px 15px">
+        {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
+            {{ $currentTagCount := len $taxonomy.Pages }}
+            {{ $currentFontSize := (add $smallestFontSize (mul (sub $currentTagCount $min) $fontStep) ) }}
+            <!--Current font size: {{$currentFontSize}}-->
+            <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" style="font-size:{{$currentFontSize}}{{$fontUnit}}">{{ $name }}</a>
+        {{ end }}
+    </div>
+{{ end }}
+  </section>
+</div>
