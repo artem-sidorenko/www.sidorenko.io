@@ -15,7 +15,6 @@
     </div>
     <div style="padding: 5px 0px">
     <div class="content">
-      {{ .Data.Plural }}
       <ul>
       {{ range first 10 (where (where .Site.Pages "Type" "post") "IsPage" true) }}
         <li>
