@@ -4,6 +4,7 @@ relativeURLs  = true
 theme         = "bootstrap-premium"
 paginate      = 5
 copyright     = "Artem Sidorenko"
+DisqusShortname = "dev-sidorenko"
 
 [permalinks]
   post = "/:year/:month/:title/"
