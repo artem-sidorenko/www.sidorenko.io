@@ -18,6 +18,7 @@ tag = "tags"
   email = "artem@posteo.de"
 
 [params]
+description = "Blog of Artem Sidorenko"
 paginate_sections = 20
 switchlang = false
 showRightSidebar = true
@@ -27,7 +28,7 @@ mailmunchid = ""
 sumomeid = ""
 mathjax = ""
 googleplus = ""
-twitter = ""
+twitter = "art_sidorenko"
 
 [params.theme]
 name = "default"
