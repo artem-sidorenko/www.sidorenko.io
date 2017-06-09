@@ -1,9 +1,9 @@
-baseurl       = "/"
-title         = "Artem Sidorenko"
-relativeURLs  = true
-theme         = "bootstrap-premium"
-paginate      = 5
-copyright     = "Artem Sidorenko"
+baseurl         = "/"
+title           = "Artem Sidorenko"
+relativeURLs    = true
+theme           = "bootstrap-premium"
+paginate        = 10
+copyright       = "Artem Sidorenko"
 DisqusShortname = "dev-sidorenko"
 
 [permalinks]
@@ -18,6 +18,7 @@ tag = "tags"
   email = "artem@posteo.de"
 
 [params]
+paginate_sections = 20
 switchlang = false
 showRightSidebar = true
 BrandImage = ""
