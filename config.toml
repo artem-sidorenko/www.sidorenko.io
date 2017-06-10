@@ -5,6 +5,7 @@ theme           = "bootstrap-premium"
 paginate        = 10
 copyright       = "Artem Sidorenko"
 DisqusShortname = "dev-sidorenko"
+enableRobotsTXT = true
 
 [permalinks]
   post = "/:year/:month/:title/"
