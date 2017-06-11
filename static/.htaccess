@@ -1,8 +1,5 @@
 ErrorDocument 404     /404.html
 
-# Redirect of some old urls
-Redirect 301 /atom.xml /post/index.xml
-
 RewriteEngine on
 # Redirect from http to https
 RewriteCond %{HTTPS} off
@@ -14,3 +11,6 @@ RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301,NC]
 
 # Add HSTS headers to the https connections
 Header set Strict-Transport-Security "max-age=10886400; includeSubDomains" env=HTTPS
+
+# Redirect of some old urls
+Redirect 301 /atom.xml /post/index.xml
