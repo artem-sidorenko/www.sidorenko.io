@@ -1,6 +1,5 @@
-baseurl         = "/"
+baseurl         = "https://www.sidorenko.io"
 title           = "Artem Sidorenko"
-relativeURLs    = true
 theme           = "bootstrap-premium"
 paginate        = 10
 copyright       = "Artem Sidorenko"
@@ -8,8 +7,7 @@ DisqusShortname = "dev-sidorenko"
 enableRobotsTXT = true
 
 [permalinks]
-  post = "/:year/:month/:title/"
-  code = "/:slug/"
+  post = "/:section/:year/:month/:title/"
 
 [taxonomies]
 tag = "tags"
