@@ -1,6 +1,6 @@
 +++
 date = "2010-10-21T16:32:00+01:00"
-tags = [ "vpshere", "esx", "san" ]
+tags = [ "vsphere", "esx", "san" ]
 title = "How to setup the link timeout on the HBAs on the ESX"
 +++
 
