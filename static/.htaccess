@@ -40,3 +40,4 @@ Redirect 301 /blog/2012/04/20/how-to-build-apc-or-eaccelerator-for-php-on-window
 Redirect 301 /blog/2012/05/16/how-to-backup-mysql/ /post/2012/05/how-to-backup-mysql/
 Redirect 301 /blog/2012/07/11/how-to-root-galaxy-tab-2-10-dot-1-with-heimdall/ /post/2012/07/how-to-root-galaxy-tab-2-10.1-with-heimdall/
 Redirect 301 /blog/2012/12/30/flashing-android-4-on-samsung-galaxy-s-ii-with-heimdall/ /post/2012/12/flashing-android-4-on-samsung-galaxy-s-ii-with-heimdall/
+Redirect 301 /blog/2013/12/31/how-to-install-linux-mint-on-encrypted-raid-1-with-lvm/ /post/2013/12/how-to-install-linux-mint-on-encrypted-raid-1-with-lvm/
