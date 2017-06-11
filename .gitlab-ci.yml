@@ -7,10 +7,10 @@ stages:
 variables:
   FTP_HOST: www138.your-server.de
 
-build:
+.build-job: &build-job
   stage: build
   script:
-  - hugo
+  - hugo --baseURL $BASE_URL
   - test -f public/index.html
   artifacts:
     expire_in: 90d
@@ -27,6 +27,13 @@ build:
   when: manual
   script:
   - lftp -c "set ftps:initial-prot ''; set ftp:ssl-force true; set ftp:ssl-protect-data true; open ftp://$FTP_USER:$FTP_PASS@$FTP_HOST:21; rm -r $FTP_ENV; mkdir $FTP_ENV; quit;"
+
+build for development:
+  <<: *build-job
+  variables:
+    BASE_URL: https://dev.sidorenko.io
+  except:
+    - master
 
 deploy to development:
   <<: *deploy-job
@@ -45,6 +52,13 @@ cleanup development:
   environment:
     name: development
     action: stop
+
+build for production:
+  <<: *build-job
+  variables:
+    BASE_URL: https://dev.sidorenko.io
+  only:
+    - master
 
 deploy to production:
   <<: *deploy-job
