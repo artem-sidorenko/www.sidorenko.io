@@ -39,7 +39,7 @@ I was using Linux for it, but it should work at the same way with Windows.
 
 That's all!
 
-# See also
+See also:
 
 - [AlphaRevX Beta](http://alpharev.nl/x/beta/)
 - [Anleitung Bootloader entsperren (S-OFF), CustomROM installieren und Root Zugriff](http://www.android-hilfe.de/root-hacking-modding-fuer-htc-desire-s/122244-anleitung-bootloader-entsperren-s-off-customrom-installieren-root-zugriff.html)
