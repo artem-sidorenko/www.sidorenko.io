@@ -14,3 +14,10 @@ Header set Strict-Transport-Security "max-age=10886400; includeSubDomains" env=H
 
 # Redirect of some old urls
 Redirect 301 /atom.xml /post/index.xml
+Redirect 301 /blog/2010/10/21/how-to-setup-the-link-timeout-on-the-hbas-on-the-esx/ /post/2010/10/how-to-setup-the-link-timeout-on-the-hbas-on-the-esx/
+Redirect 301 /blog/2010/10/21/how-to-determine-the-switch-port-with-tcpdump/ /post/2010/10/how-to-determine-the-switch-port-with-tcpdump/
+Redirect 301 /blog/2010/10/21/how-to-edit-initrd-image/ /post/2010/10/how-to-edit-initrd-image/
+Redirect 301 /blog/2010/10/21/using-native-sata-on-systems-with-ide-emulation/ /post/2010/10/using-native-sata-on-systems-with-ide-emulation/
+Redirect 301 /blog/2010/10/22/how-to-use-the-correct-interface-for-kickstart-installations/ /post/2010/10/how-to-use-the-correct-interface-for-kickstart-installations/
+Redirect 301 /blog/2010/11/04/vsphere-client-cli-options/ /post/2010/11/vsphere-client-cli-options/
+Redirect 301 /blog/2010/11/08/workaround-for-anaconda-network-timeouts-and-spanning-tree-with-kickstart-installations/ /post/2010/11/workaround-for-anaconda-network-timeouts-and-spanning-tree-with-kickstart-installations/
