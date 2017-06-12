@@ -57,7 +57,7 @@ cleanup development:
 build for production:
   <<: *build-job
   variables:
-    BASE_URL: https://dev.sidorenko.io
+    BASE_URL: https://www.sidorenko.io
   only:
     - master
 
@@ -66,10 +66,10 @@ deploy to production:
   only:
   - master
   variables:
-    FTP_ENV: dev
+    FTP_ENV: prod
   environment:
-    name: development
-    url: https://dev.sidorenko.io
+    name: production
+    url: https://www.sidorenko.io
 
 update github:
   stage: deploy
