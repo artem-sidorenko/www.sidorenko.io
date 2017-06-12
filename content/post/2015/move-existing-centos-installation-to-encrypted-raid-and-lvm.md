@@ -6,7 +6,7 @@ title = "Move existing centos installation to encrypted raid and lvm"
 
 If you have already some CentOS/RHEL installation and you want to move it to a RAID/LVM with full disk encryption, then this post is for you. We will move a minimal simple CentOS 7 installation on a single disk with LVM to the full encrypted RAID1&LVM setup.
 
-<!-- more -->
+<!--more-->
 
 Following steps will be done here:
 

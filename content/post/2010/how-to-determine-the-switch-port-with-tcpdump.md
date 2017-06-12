@@ -6,7 +6,7 @@ title = "How to determine the switch port with tcpdump"
 
 We are going to use the Cisco Discovery Protocol, CDP
 
-<!-- more -->
+<!--more-->
 
 ```bash
 linux$ tcpdump -i eth0 ether host 01:00:0c:cc:cc:cc -s 1500 -vv -nn

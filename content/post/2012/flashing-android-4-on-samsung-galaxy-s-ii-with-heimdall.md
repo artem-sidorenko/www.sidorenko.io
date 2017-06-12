@@ -6,7 +6,7 @@ title = "Flashing Android 4 on Samsung Galaxy S II with heimdall"
 
 We are using only Linux and no Odin and VirtualBox to update Galaxy S II to Android 4 alias Ice Cream Sandwich.
 
-<!-- more -->
+<!--more-->
 
 **Heimdall 1.3.2 seems to be broken, so use heimdal < 1.3.2. [More information](https://github.com/Benjamin-Dobell/Heimdall/issues/32)**
 

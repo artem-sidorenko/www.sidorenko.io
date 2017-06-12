@@ -10,7 +10,7 @@ In this post I want explain how to do it with puppet on the simple way.
 
 I've created a [module][puppet-sshkeys], which is a wrapper around core puppet types User and Ssh_authorized_key. This wrapper enables an easy key management via integration with hiera on puppet. (and it was a good exercise in rspec-puppet:) )
 
-<!-- more -->
+<!--more-->
 
 # Setup the environment
 

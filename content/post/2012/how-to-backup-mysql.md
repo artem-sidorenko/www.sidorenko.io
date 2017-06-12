@@ -6,7 +6,7 @@ title = "How to backup mysql"
 
 We are going to create a simple cron job to dump the DBs, so you can save this dumps on the regular way with your backup software.
 
-<!-- more -->
+<!--more-->
 
 **This way isn't applicable to DB installations with huge amount of data, so use it only for small DBs**
 

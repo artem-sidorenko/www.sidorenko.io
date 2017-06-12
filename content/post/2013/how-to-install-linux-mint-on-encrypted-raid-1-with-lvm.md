@@ -8,7 +8,7 @@ The installer of Linux Mint doesn't support the installation on encrypted raid 1
 
 Following steps are required to do this with Linux Mint 16 (without GPT&UEFI)
 
-<!-- more -->
+<!--more-->
 
 - Boot your system with a Linux Mint LiveCD
 - Configure network to get internet

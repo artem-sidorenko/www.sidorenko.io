@@ -6,7 +6,7 @@ title = "How to edit initrd image"
 
 It usefull sometimes to edit the initrd/initramfs image of the system. This howto describes the simple and usual way to do it.
 
-<!-- more -->
+<!--more-->
 
 **Hint:** Mainstream distributions have own mechanisms to do this things. Take a look at mkinitramfs/mkinitrd. In such case your customized image can be overwritten by this tools, so try to do in on the right way;)
 
