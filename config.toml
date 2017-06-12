@@ -3,7 +3,7 @@ title           = "Artem Sidorenko"
 theme           = "bootstrap-premium"
 paginate        = 10
 copyright       = "Artem Sidorenko"
-DisqusShortname = "dev-sidorenko"
+DisqusShortname = "2realities"
 enableRobotsTXT = true
 
 [permalinks]
