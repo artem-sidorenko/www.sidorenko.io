@@ -54,3 +54,17 @@ Redirect 301 /blog/2014/11/04/yubikey-slash-openpgp-smartcards-for-newbies/ /pos
 Redirect 301 /blog/2015/02/08/move-existing-centos-installation-to-encrypted-raid-and-lvm/ /post/2015/move-existing-centos-installation-to-encrypted-raid-and-lvm/
 Redirect 301 /blog/2015/05/19/easy-creation-of-a-simple-apt-repo/ /post/2015/easy-creation-of-a-simple-apt-repo/
 Redirect 301 /blog/2015/08/24/froscon-2015-impressions/ /post/2015/froscon-2015-impressions/
+Redirect 301 /blog/2016/04/12/flashing-bq-aquaris-x5/ /post/2016/flashing-bq-aquaris-x5/
+Redirect 301 /blog/2016/05/25/short-way-to-a-deb-package/ /post/2016/a-short-way-to-a-deb-package/
+Redirect 301 /blog/2016/05/26/build-packages-with-openbuild-service/ /post/2016/build-packages-with-openbuild-service/
+Redirect 301 /blog/2016/06/30/install-chef-on-raspberry-pi-with-centos/ /post/2016/installing-chef-on-raspberry-pi-with-centos/
+Redirect 301 /blog/2016/07/01/creating-container-base-image-of-centos/ /post/2016/creating-container-base-image-of-centos/
+Redirect 301 /blog/2016/09/29/hybrid-suspend-with-systemd/ /post/2016/hybrid-suspend-with-systemd/
+Redirect 301 /blog/2016/10/09/configuring-chefdk/ /post/2016/configuring-chefdk/
+Redirect 301 /blog/2016/10/26/writing-helper-cookbooks-with-shared-functions/ /post/2016/writing-helper-cookbooks-with-shared-functions/
+Redirect 301 /blog/2016/11/26/writing-inspec-tests-in-the-rspec-style/ /post/2016/writing-inspec-tests-in-the-rspec-style/
+Redirect 301 /blog/2016/12/03/dynamic-resources-in-chef/ /post/2016/using-dynamic-resources-in-chef/
+Redirect 301 /blog/2016/12/10/ipv6-with-prefix-delegation-and-mikrotik/ /post/2016/ipv6-with-prefix-delegation-routeros-and-fritzbox/
+Redirect 301 /blog/2017/01/04/setting-up-nat64-with-tayga-on-centos/ /post/2017/setting-up-nat64-with-tayga-on-centos/
+Redirect 301 /blog/2017/02/11/testing-chef-cookbooks-with-gitlab-ci/ /post/2017/testing-chef-cookbooks-with-gitlab-ci/
+Redirect 301 /blog/2017/05/27/using-travis-to-deploy-a-hugo-site-to-shared-hosting/ /post/2017/using-travis-to-deploy-hugo-site-to-a-shared-hosting/
