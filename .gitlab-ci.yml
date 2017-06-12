@@ -6,6 +6,7 @@ stages:
 
 variables:
   FTP_HOST: www138.your-server.de
+  GITHUB_URL: https://github.com/artem-sidorenko/www.sidorenko.io.git
 
 .build-job: &build-job
   stage: build
@@ -69,3 +70,15 @@ deploy to production:
   environment:
     name: development
     url: https://dev.sidorenko.io
+
+update github:
+  stage: deploy
+  only:
+  - master
+  script:
+  - echo $GITHUB_AUTH_SECRET > ~/.git-credentials && chmod 0600 ~/.git-credentials
+  - git config --global credential.helper store
+  - git config --global user.email "artem-bot@users.noreply.github.com"
+  - git config --global user.name "Artems Bot"
+  - git config --global push.default simple
+  - git push $GITHUB_URL master:master
