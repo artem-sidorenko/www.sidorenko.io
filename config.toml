@@ -7,7 +7,7 @@ DisqusShortname = "dev-sidorenko"
 enableRobotsTXT = true
 
 [permalinks]
-  post = "/:section/:year/:month/:title/"
+  post = "/:section/:year/:title/"
 
 [taxonomies]
 tag = "tags"
