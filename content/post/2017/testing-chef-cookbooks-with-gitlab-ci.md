@@ -129,9 +129,10 @@ Create a new repository, ensure 'Builds' is enabled in the project settings and 
 
 We assume that repository/project name is `docker/docker-test-kitchen`.
 
-Add following CI settings to the repository:
+Add following CI settings to the repository, create `.gitlab-ci.yml`:
 
-```yaml .gitlab-ci.yml
+```yaml
+# .gitlab-ci.yml
 stages:
 - build
 
@@ -160,9 +161,10 @@ build and release:
    - dind
 ```
 
-Add following Dockerfile to the repository:
+Add following `Dockerfile` to the repository:
 
-```plain Dockerfile
+```plain
+# Dockerfile
 FROM centos:7
 MAINTAINER Artem Sidorenko <artem@posteo.de>
 
@@ -191,9 +193,10 @@ RUN yum -y install "VirtualBox-$VIRTUALBOX_VERSION" "chefdk-$CHEFDK_VERSION" && 
     vagrant plugin install vagrant-cachier
 ```
 
-Add following Vagrantfile to the repo:
+Add following Vagrantfile to the repo, create `assets/root/.vagrant.d/Vagrantfile`:
 
-```ruby assets/root/.vagrant.d/Vagrantfile
+```ruby
+# assets/root/.vagrant.d/Vagrantfile
 Vagrant.configure('2') do |config|
   # enable caching of packages via vagrant-cachier
   config.cache.scope = :box
@@ -278,9 +281,10 @@ suites:
 EOF
 ```
 
-Create GitLab CI configuration:
+Create GitLab CI configuration, create `.gitlab-ci.yml`:
 
-```yaml .gitlab-ci.yml
+```yaml
+# .gitlab-ci.yml
 test-kitchen:
   stage: test
   artifacts:

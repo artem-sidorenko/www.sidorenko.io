@@ -161,7 +161,7 @@ Created during key creation, just for an emergency case
 Is this okay? (y/N) y
 ...
 # do a text backup of master key
-gpg -a --export-secret-keys > $GNUPGHOME/../armor-baks/masterkeys.txt
+$ gpg -a --export-secret-keys > $GNUPGHOME/../armor-baks/masterkeys.txt
 # Create subkeys: signing, encryption, authentification (for ssh)
 $ gpg --expert --edit-key <<key id here>>
 ...
