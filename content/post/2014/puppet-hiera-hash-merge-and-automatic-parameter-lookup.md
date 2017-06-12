@@ -8,7 +8,7 @@ Hiera within Puppet is a great thing, especially starting with puppet 3.
 
 But there are still some limitations, like [priority lookup only with automatic parameter lookup][puppet_hiera_limitation].
 
-<!-- more -->
+<!--more-->
 
 # Problem
 

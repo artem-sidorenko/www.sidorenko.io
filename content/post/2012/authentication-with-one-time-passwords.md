@@ -8,7 +8,7 @@ This article is about implementing One-Time-Password authentication with PAM, so
 
 We will use [oath-toolkit](http://www.nongnu.org/oath-toolkit/) for it. So install it, gentoo ebuild for it is provided in [my overlay](https://github.com/artem-sidorenko/portage-2realities).
 
-<!-- more -->
+<!--more-->
 
 # Creating users
 

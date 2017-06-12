@@ -8,7 +8,7 @@ Some systems have this IDE emulation enabled for compatibility purposes.
 IDE module and devices are normally initiated by linux kernel before SATA modules and devices.
 So, our SATA device is blocked by IDE kernel module and can't be used as native SATA device. Is also not possible to use this emulated IDE device with DMA, so we have a real performance problem with hard disk I/O on this system.
 
-<!-- more -->
+<!--more-->
 
 The solution for this is realy simple, disable scans of IDE bus within grub kernel configuration:
 

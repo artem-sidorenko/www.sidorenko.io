@@ -8,7 +8,7 @@ We are going to implement authentication with One-Time-Passwords generated via t
 
 This example is for Gentoo.
 
-<!-- more -->
+<!--more-->
 
 # Installation
 

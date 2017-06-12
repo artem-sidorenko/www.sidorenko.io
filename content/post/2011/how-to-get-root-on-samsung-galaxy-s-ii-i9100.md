@@ -6,7 +6,7 @@ title = "How to get root on Samsung Galaxy S II I9100"
 
 Why root? I want to use some advanced features like DroidWall(frontend for iptables), Titanium Backup, OpenVPN, so I need root.
 
-<!-- more -->
+<!--more-->
 
 **Warning: It was working for me. I'm not responsible if you break your device. You are doing this steps at your own risk. The installation of a modified firmware may invalidate the manufacturer's warranty! You have been warned!**
 

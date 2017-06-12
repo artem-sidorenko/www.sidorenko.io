@@ -8,7 +8,7 @@ Why root? I want to use some advanced features like DroidWall(frontend for iptab
 
 I was using Linux for it, but it should work at the same way with Windows.
 
-<!-- more -->
+<!--more-->
 
 **Warning: It was working for me. I'm not responsible if you break your device. You are doing this steps at your own risk. The installation of a modified firmware invalidates the manufacturer's warranty! You have been warned!**
 

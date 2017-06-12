@@ -6,7 +6,7 @@ title = "Flashing clockmod recovery on Samsung Galaxy S II i9100"
 
 You may need custom recovery if you want to do nandroid backups of flash some zip files. I will use Linux to flash it.
 
-<!-- more -->
+<!--more-->
 
 **Warning: It was working for me. I'm not responsible if you break your device. You are doing this steps at your own risk. The installation of a modified firmware might invalidate the manufacturer's warranty!**
 

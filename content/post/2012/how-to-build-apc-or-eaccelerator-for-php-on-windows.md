@@ -8,7 +8,7 @@ title = "How to build APC or eAccelerator for PHP on windows"
 If you running some php web applications with heavy load you should use some accelerators like [APC](http://pecl.php.net/package/APC) or [eAccelerator](https://eaccelerator.net/) for PHP.
 I noticed that official build instructions in readme's and official homepages are not completely usable to get it working.
 
-<!-- more -->
+<!--more-->
 
 So, we are going to build shared APC extension(php_apc.dll) or eAccelerator extension(eAccelerator.dll) for PHP on windows. Our build platform will be Windows XP SP3 32bit and we are using PHP 5.3.10 VC9 thread safe 32bit.
 

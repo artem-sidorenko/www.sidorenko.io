@@ -6,7 +6,7 @@ title = "How to root Galaxy Tab 2 10.1 with heimdall"
 
 We are going to install ClockworkMod Recovery on the Galaxy Tab 2 10.1 (GT-P5100) with heimdall. After that you can root your stock image or install CyanogenMod on your tab. If you have another version of Galaxy Tab 2 you will need other images for it, for links take a look at the links at the bottom.
 
-<!-- more -->
+<!--more-->
 
 **Warning: It was working for me. I'm not responsible if you break your device. You are doing this steps at your own risk. The installation of a modified firmware invalidates the manufacturer's warranty! You have been warned!**
 

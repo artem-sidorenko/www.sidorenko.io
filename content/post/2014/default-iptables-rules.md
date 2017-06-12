@@ -10,7 +10,7 @@ I use following iptables and ip6tables rules as a default. This rules provide ba
 - port knocking for management services like ssh
 - port scan protection
 
-<!-- more -->
+<!--more-->
 
 # Requirements
 
