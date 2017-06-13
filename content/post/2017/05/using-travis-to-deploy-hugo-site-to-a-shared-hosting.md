@@ -108,7 +108,7 @@ $ hugo server
 
 After you enjoyed your first content with hugo, put the deployment credentials in Travis, in the settings of your project. This credentials contain the FTP data for deployment and Travis will configure them as environment variables in the CI jobs on the base repository (they are not visible to the forks).
 
-![Travis Project Settings](../img/hugo-travis-hetzner/travis-settings.png)
+![Travis Project Settings](travis-settings.png)
 
 # Create travis configuration
 

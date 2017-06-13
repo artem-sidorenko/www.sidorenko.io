@@ -12,5 +12,5 @@ In order to have a preview of posts, you should have hugo installed. There are t
 ## Adding new content
 
 ```bash
-$ hugo new post/2017/testpost.md
+$ hugo new post/2017/01/testpost.md
 ```
