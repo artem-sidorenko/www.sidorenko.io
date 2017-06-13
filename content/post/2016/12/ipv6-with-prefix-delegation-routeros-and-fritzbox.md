@@ -15,7 +15,7 @@ This blog post describes this setup and configuration for:
 
 Following picture gives an overview on the network setup with IPv4 and subnetworks:
 
-![IPv4 overview](../img/ipv6-with-prefix-delegation/intro-ipv4-overview.png)
+![IPv4 overview](intro-ipv4-overview.png)
 
 As we want to configure IPv6 in dual stack mode, we are not going to change the IPv4 configuration. We will only add the IPv6 configuration. It will be done in two steps:
 
@@ -27,7 +27,7 @@ As we want to configure IPv6 in dual stack mode, we are not going to change the 
 For the internal IPv6 communication we will configure [unique local addresses (ULA)]. ULA is comparable with private addresses of IPv4, but these addresses are intended to be unique to avoid any collisions within ULA address space. It makes sense to register your ULA prefix on the [Sixxs ULA database].
 In this blog post we use `2001:db8:fc00::/48` as ULA prefix.
 
-![IPv6 ULA prefixes](../img/ipv6-with-prefix-delegation/ipv6-ula.png)
+![IPv6 ULA prefixes](ipv6-ula.png)
 
 The configuration on the RouterOS is simple: add two IPv6 addresses to the vlan interfaces:
 
@@ -45,7 +45,7 @@ Because of this you can not simply make a static configuration. But there is a s
 - internal router asks the internet router to assign him part of the /56 GUA prefix via DHCPv6
 - the requested prefix can be splitted to the subnetworks and then assigned to the interfaces and announced via router advertisements to the nodes
 
-![IPv6 GUA prefixes](../img/ipv6-with-prefix-delegation/ipv6-gua.png)
+![IPv6 GUA prefixes](ipv6-gua.png)
 
 Lets assume following things:
 
