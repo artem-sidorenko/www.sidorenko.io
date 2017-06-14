@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/artem_sidorenko
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://sidorenko.io
+  * I am artem_sidorenko (https://keybase.io/artem_sidorenko) on keybase.
+  * I have a public key with fingerprint 4987 9ED6 76E4 2205 980D  6AF5 F29A A8AD 8B4B 87B9
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01018e08641ec51d6da2dc0bb3b944841c3897891f35e5872e51e068ddf1629c59670a",
+            "fingerprint": "49879ed676e42205980d6af5f29aa8ad8b4b87b9",
+            "host": "keybase.io",
+            "key_id": "f29aa8ad8b4b87b9",
+            "kid": "01018e08641ec51d6da2dc0bb3b944841c3897891f35e5872e51e068ddf1629c59670a",
+            "uid": "f0e88d343ece520a886d448dc2a05219",
+            "username": "artem_sidorenko"
+        },
+        "service": {
+            "hostname": "sidorenko.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1467871799,
+    "expire_in": 157680000,
+    "prev": "898f272b3db8094fcab032ea8f5df7f018ae7f0b7ed8f262e86dd535b9862f0e",
+    "seqno": 19,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.22 (GNU/Linux)
+
+owGtUm9MVWUchgtJQALG0hTZ7IyEgMn5f95zEZXBRhJRCk6mwOWc874HDxfuud4/
+CMMbDOWPgg1FDMQZjmEWTaeJsukEBAZYa4kIghbkl4aFgGZF3ahz0PrUx94vv73v
+7/k9z+959tYt9/IweGZVVh9aIQmrPL+cFj12up5sLMFEFRZjxhLMjJYKyofI7jCZ
+FYgZMZzACYBwwNIEkhgCslAgoYSLIiXyNA1oQqIAzwGekCkGMYAjEUMgnAUQygRL
+8hLDsxwuYNGYrFhykc1qUywOjZbmAccjyHIsokkSZ3iAQ1aQGZnkBQEIEIi0CDiR
+1wb3qHZ9QltOFOxog6Jqb9rFtLTef+D/572dz3VwBACkaApJiCFxAQAWajRQIgWc
+IQld12lHNotQgDS0YHOgApNdgaoNWcwq5orGtGahIiE9X93QC+C/kOe2rDbVoUpq
+vtbZ43BY7UZ90lFs1aH7kGh6QWISFQvU4tQmCpHNrqgWzEhoSMmh6KwEzXKAIzie
+j8ZQkVWxIZOiIxiOBbh2dB1UqFHmAB7IJEeKFBQBztOyJIg4RSIByAyUOVlLUEBa
+ETkENSBLIs01ZChG5AFLapFguq+9FlUj17QcQu6SpVyL4HDaEObyO2RY6+3hafBY
+9pJB/2kefr5B/3w/1BH4116fE0Tv1Htl5QlopKPvt7jm+Fce3vMLMM/2vkxuf5Ov
+vZU+upBs7/cn32i5XOHqmObODeWsr1z38fBi762HiSmDXSOn418TYvI/DF64B7f+
+HmXtroShdXn3wa/VyhCIigyMvhh5drUraxe2ph/LrnsslhcO9bdtTGj3Ol7PBsWd
+NbuY1IGQ0Ttm+2TasS2dVdaK5YYgr7mpiImP2jKKV+S4u4/MnC4J2WSu2X6SWvV1
+5uT+UNo7e+tN5VHn4dzIqPEDQbUR5yIqtv0Um7+rv37TYFrzhUQ5ojtlMsF9yolO
+Lvr3r2u6GSKv3mHIaU2NlTJ/fmfCuzP4/fTG3tmasQC1tOjas67qrNKasDPThtK0
+kd1+iTHMon+TqlydZ85/1XA/bjw9o0IKDw6u2/3qW6FJN/Zdc7tCan2fkhc3Nz/Z
+kVF/d+pZZ8AH7VHfNX66ct7tTPpsMTjbGObn87hlZ96J1obutrL9oyNfBBIzPclT
+Ie5lxzu4p3Rryo9jl/oWnBuKsq+U3/3mE/xo8eexf/ScWROeFDR3PevS2tLbWPSB
+iF/ihicayVM3+h6NVfl/G+jTRc0mtx9Ujub1bLvuawtrTHMOvJ5aNj9zcCA+/HJ4
+ZoP9imHq3YIHCU1zK5sznYvrjYFb3FjL5vFjwym3q394myx7MBLzPTg/eLUk4bBb
+vkD+eaeKivsb
+=svpw
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/artem_sidorenko
+
+==================================================================
