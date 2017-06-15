@@ -18,3 +18,7 @@ $ hugo new post/2017/01/testpost.md
 ## License
 
 Content of this blog is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+## Contributing
+
+I just share the sources of my blog for the case somebody needs them. No collaboration via Pull Requests is expected, please do not open PRs. Feel free to open issues if you have any questions.
