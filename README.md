@@ -14,3 +14,7 @@ In order to have a preview of posts, you should have hugo installed. There are t
 ```bash
 $ hugo new post/2017/01/testpost.md
 ```
+
+## License
+
+Content of this blog is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
