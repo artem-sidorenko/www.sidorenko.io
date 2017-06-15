@@ -9,6 +9,10 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} ^sidorenko.io [NC]
 RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301,NC]
 
+# Redirect from old URLs without trailing slash to the URL with slash
+RewriteCond %{REQUEST_URI} ^/blog/.*[^/]$
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1/ [L,R=301,NC]
+
 # Add HSTS headers to the https connections
 Header set Strict-Transport-Security "max-age=10886400; includeSubDomains" env=HTTPS
 
