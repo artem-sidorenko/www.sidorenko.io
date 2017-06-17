@@ -15,18 +15,18 @@ If you want to keep 64bit browser on the system and to use 32bit setup only for 
 - We will create a folder ``/opt/webex-firefox`` and place 32bit firefox and java there.
 - Firefox will still use the default folders like ``~/.mozilla`` on your system, so we will create a separate profile
 - First of all download the latest 32bit
-  - [Mozilla Firefox](https://www.mozilla.org/en-US/)
+  - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
   - [Oracle Java](http://www.java.com/en/download/linux_manual.jsp?locale=en)
 - Unpack and create the structure (as root)
 
 ```bash
 #install 32 libraries with dependencies
-$ apt-get install libgtk2.0-0:i386 libpangoxft-1.0-0:i386 libpangox-1.0-0:i386 libxmu6:i386 libxtst6:i386 libdbus-glib-1-2:i386
+$ apt-get install libgtk-3-0:i386 libpangoxft-1.0-0:i386 libpangox-1.0-0:i386 libxmu6:i386 libxtst6:i386 libdbus-glib-1-2:i386
 
 $ mkdir /opt/webex-firefox
 $ cd /opt/webex-firefox
 #unpack it
-$ tar xfj firefox-33.0.1.tar.bz2
+$ tar xfj firefox-54.0.tar.bz2
 $ tar xfz jre-8u25-linux-i586.tar.gz
 $ rm firefox*.tar.bz2
 $ rm jre*.tar.gz
