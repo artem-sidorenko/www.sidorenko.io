@@ -28,7 +28,7 @@ Based on the code [from Hendrik Sommerfeld][1], here is the implementation with 
     {{ $largestFontSize := 2.5 }}
     {{ $smallestFontSize := 1.0 }}
     {{ $fontSpread := sub $largestFontSize $smallestFontSize }}
-    {{ $max := len (index $.Site.Taxonomies.tags.ByCount 0).Pages }}
+    {{ $max := add (len (index $.Site.Taxonomies.tags.ByCount 0).Pages) 1 }}
     {{ $min := len (index $.Site.Taxonomies.tags.ByCount.Reverse 0).Pages }}
     {{ $spread := sub $max $min }}
     {{ $fontStep := div $fontSpread $spread }}
