@@ -1,4 +1,4 @@
-image: registry.scader.eu/docker/docker-homepage:latest
+image: registry.scader.eu/automation/docker/centos-homepage:latest
 
 stages:
 - build
