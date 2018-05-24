@@ -9,7 +9,7 @@ weight = 3
 
 Tech, Code, Linux, Open Source.
 
-I work on Cloud, DevOps, automation topics for [Deutsche Telekom](http://www.telekom.com)
+I work on Cloud, Security, DevOps, automation topics for [Deutsche Telekom](http://www.telekom.com)
 
 Languages: German, English, Russian
 
@@ -25,16 +25,3 @@ Location: [Bonn, Germany](http://www.openstreetmap.org/node/26373169#map=8/50.54
  - [GitLab](https://gitlab.com/u/artem-sidorenko)
  - [openSuse Build Service](https://build.opensuse.org/project/show/home:artem_sidorenko)
  - [Twitter](https://twitter.com/art_sidorenko)
-
-# Information for headhunters
- - Please, do not contact me via phone. If you want to get in touch -> drop me a mail
- - Please keep the next points in mind:
-   - I'm not interested on any positions for development of some proprieatary solutions
-   - I'm not interested on any positions which require relocation
-   - I've an engineering telco background together with development and operation skills. I'm not interested on usual devops posititions.
- - Following topics are in the area of my interest and experience:
-   - Engineering of on-premise IaaS-infrastructures with OpenStack
-   - Development and introduction of complex continuous integration/delivery/deployment chains
-   - Engineering and introduction of microservices with containers, especially with Rkt and not Docker
-   - Development tasks with OpenSource based modell in the above fields
- - If you contact me, please include the name of the company and conditions
