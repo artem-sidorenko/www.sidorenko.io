@@ -1,5 +1,5 @@
 <div class="container">
 {{ range .Site.Menus.footer }}
-<a href="{{ .URL | absLangURL }}">{{ .Name }}</a> {{ .Pre }}
+<a href="{{ .URL | absLangURL }}">{{ .Name }}</a> <br/> {{ .Pre }}
 {{ end }}
 </div>

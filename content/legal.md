@@ -5,10 +5,6 @@ menu = "footer"
 weight = 4
 +++
 
-This website represents only my own opinions and not those of my employer or any other party.
-
-Diese Webseite gibt ausschließlich nur meine eigenen Ideen und Meinungen wieder. Sie repräsentiert weder meinen Arbeitgeber noch eine andere Partei.
-
 # Angaben gemäß § 5 TMG
 
 ```text
@@ -36,6 +32,10 @@ für jegliche kommerzielle Zwecke, Werbung, sonstiger Weitergabe oder
 anderweitiger Veröffentlichung wird hiermit ausdrücklich widersprochen.
 Die Betreiber der Seiten behalten sich ausdrücklich rechtliche
 Schritte im Falle des Missbrauches vor.
+
+# Datenschutz
+
+Die Datenschutzerklärung ist verfügbar under dem [folgendem Link](../privacy/).
 
 # Haftungsausschluss:
 
@@ -79,36 +79,3 @@ Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erst
 werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche
 gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis.
 Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
-
-## Datenschutz
-
-Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name,
-Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
-
-Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B.
-bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann.
-Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht
-möglich.
-Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten
-durch Dritte zur Übersendung von nicht ausdrücklich angeforderter
-Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen.
-Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte
-im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails,
-vor.
-
-# Datenschultzerklärung für die Nutzung von Disqus
-
-Aus unseren Seiten sind Funktionen des Dienstes Disqus eingebunden.
-Diese Funktionen werden angeboten durch die Disqus, Inc., 301 Howard St.,
-Suite 300, San Francisco, CA 94105, USA. Disqus ist ein interaktives
-Kommentarsystem, das es dem Nutzer ermöglicht, mit nur einer Anmeldung
-auf allen Internetangeboten, die Disqus als Kommentarsystem verwenden,
-zu kommentieren. Dabei werden auch Daten an Disqus übertragen.
-Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis
-vom Inhalt der übermittelten Daten sowie deren Nutzung durch Disqus
-erhalten. Bei Nutzung der bestehenden Accounts bei Facebook, Twitter,
-Yahoo, Google und OpenID können weitere Daten zum entsprechenden Anbieter
-übertragen werden. Weitere Informationen hierzu finden Sie in der
-Datenschutzerklärung von Disqus unter [https://help.disqus.com/customer/portal/topics/215159-terms-and-policies/articles](https://help.disqus.com/customer/portal/topics/215159-terms-and-policies/articles)
-
-_Quellverweis: [eRecht24 Disclaimer](http://www.e-recht24.de/muster-disclaimer.htm), [Disqus terms and policies](https://help.disqus.com/customer/portal/topics/215159-terms-and-policies/articles), [Github Datenschutzerklärung](https://help.github.com/articles/github-privacy-policy/), [Twitter Datenschutzerklärung](http://twitter.com/privacy)_
