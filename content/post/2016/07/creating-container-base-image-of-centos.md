@@ -22,7 +22,7 @@ $ mkdir -p $centos_root
 $ rpm --root $centos_root --initdb
 # download and install the centos-release package, it contains our repository sources
 $ yum reinstall --downloadonly --downloaddir . centos-release
-$ rpm --root $centos_root -ivh centos-release*.rpm
+$ rpm --root $centos_root -ivh --nodeps centos-release*.rpm
 $ rpm --root $centos_root --import  $centos_root/etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 # install yum without docs and install only the english language files during the process
 $ yum -y --installroot=$centos_root --setopt=tsflags='nodocs' --setopt=override_install_langs=en_US.utf8 install yum
@@ -30,11 +30,14 @@ $ yum -y --installroot=$centos_root --setopt=tsflags='nodocs' --setopt=override_
 $ sed -i "/distroverpkg=centos-release/a override_install_langs=en_US.utf8\ntsflags=nodocs" $centos_root/etc/yum.conf
 # chroot to the environment and install some additional tools
 $ cp /etc/resolv.conf $centos_root/etc
+# mount the device tree, as its required by some programms
+$ mount -o bind /dev $centos_root/dev
 $ chroot $centos_root /bin/bash <<EOF
 yum install -y procps-ng iputils
 yum clean all
 EOF
 $ rm -f $centos_root/etc/resolv.conf
+$ umount $centos_root/dev
 ```
 
 # Docker base image
