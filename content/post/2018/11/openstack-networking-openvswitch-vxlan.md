@@ -687,6 +687,20 @@ If you would capture the traffic on the physical link and open it in wireshark, 
 
 ![GRE header](gre.png)
 
+# MTU problem
+
+As we use encapsulation, we get the common MTU problem which occurs in such cases. Ethernet has so called MTU - Maximum Transmission Unit. MTU defines the maximum size of ethernet frame, which can be transmitted over the line. When MTU size is exceeded, your IP package is splitted to the multiple packets or even gets dropped. In the VXLAN setup with encapsulation, we have Ethernet frames on the underlaying network and we also have ethernet frame on the overlay network. In this case we run into the common problem of MTU size: the frame on the underlaying network is bigger that standard MTU of `1500`. You can see the resulting problem on the picture below:
+
+![MTU problem](mtu-problem.png)
+
+In order to avoid any problems, we have to adjust MTU on the underlaying network. If we would do the calculation of additional headers (VXLAN + UDP + IP + Ethernet) we would get `1554` MTU size for typical IPv4 traffic.
+
+![MTU 1554](mtu-fix.png)
+
+See also [MTU Considerations for VXLAN] for more details.
+
+You can also consider to use [Jumbo frames] with MTU of `9000`.
+
 <br/><br/>
 
 In the next post I'm going to cover OpenFlow with Open vSwitch and then switch to the question how OpenStack uses this underlying technologies for its networking implementation.
@@ -705,6 +719,7 @@ In the next post I'm going to cover OpenFlow with Open vSwitch and then switch t
 - [Creating Overlay Networks Using Intel® Ethernet Converged Network Adapters](https://www.intel.com/content/dam/www/public/us/en/documents/technology-briefs/overlay-networks-using-converged-network-adapters-brief.pdf)
 - [Optimizing the Virtual Network with VXLAN Overlay Offloading](https://software.intel.com/en-us/blogs/2015/01/29/optimizing-the-virtual-networks-with-vxlan-overlay-offloading)
 - [Overlay Tunneling with Open vSwitch - GRETAP, VXLAN, Geneve, GREoIPsec][Overlay Tunneling with Open vSwitch - GRETAP, VXLAN, Geneve, GREoIPsec]
+- [MTU Considerations for VXLAN][MTU Considerations for VXLAN]
 
 
 [OpenStack]: https://www.openstack.org
@@ -720,3 +735,5 @@ In the next post I'm going to cover OpenFlow with Open vSwitch and then switch t
 [Geneve]: https://costiser.ro/2016/07/07/overlay-tunneling-with-openvswitch-gre-vxlan-geneve-greoipsec/#geneve
 [GREoIPsec]: https://costiser.ro/2016/07/07/overlay-tunneling-with-openvswitch-gre-vxlan-geneve-greoipsec/#greoipsec
 [OVS Deep Dive 1: vswitchd]: https://arthurchiao.github.io/blog/ovs-deep-dive-1-vswitchd/ 
+[MTU Considerations for VXLAN]: https://keepingitclassless.net/2014/03/mtu-considerations-vxlan/
+[Jumbo frames]: https://en.wikipedia.org/wiki/Jumbo_frame
