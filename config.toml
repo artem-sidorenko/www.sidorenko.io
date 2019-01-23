@@ -1,10 +1,13 @@
-baseurl         = "https://www.sidorenko.io"
-title           = "Artem Sidorenko"
-theme           = "bootstrap-premium"
-paginate        = 10
-copyright       = "Artem Sidorenko"
-DisqusShortname = "2realities"
-enableRobotsTXT = true
+baseurl            = "https://www.sidorenko.io"
+title              = "Artem Sidorenko"
+theme              = "bootstrap-premium"
+paginate           = 10
+copyright          = "Artem Sidorenko"
+DisqusShortname    = "2realities"
+enableRobotsTXT    = true
+pygmentsCodeFences = true
+PygmentsStyle      = "friendly"
+
 
 [permalinks]
   post = "/:section/:year/:month/:title/"
