@@ -39,6 +39,8 @@ build for development:
 deploy to development:
   <<: *deploy-job
   when: manual
+  except:
+    - master
   variables:
     FTP_ENV: dev
   environment:
