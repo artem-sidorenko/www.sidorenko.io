@@ -85,4 +85,4 @@ update github:
   - git config --global user.email "artem-bot@users.noreply.github.com"
   - git config --global user.name "Artems Bot"
   - git config --global push.default simple
-  - git push $GITHUB_URL master:master
+  - git push $GITHUB_URL HEAD:master
