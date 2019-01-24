@@ -50,6 +50,8 @@ deploy to development:
 
 cleanup development:
   <<: *cleanup-job
+  except:
+    - master
   variables:
     FTP_ENV: dev
   environment:
