@@ -8,6 +8,8 @@ tags = ["go"]
 
 <!--more-->
 
+# Sequential generator with tests
+
 Given, you have the following generator function `generateInts`:
 
 ```golang
@@ -28,7 +30,7 @@ func generateInts() []int {
 }
 ```
 
-Tests, generated with [gotests] would like like this:
+Tests, generated with [gotests] would be like:
 
 ```golang
 package main
@@ -58,7 +60,9 @@ func Test_generateInts(t *testing.T) {
 }
 ```
 
-Implementation of `generateInts` with channels might look like this:
+# Concurrent generator with tests
+
+Implementation of `generateInts` with channels would be like:
 
 ```golang
 package main
@@ -84,7 +88,7 @@ func generateInts() <-chan int {
 }
 ```
 
-Tests, generated with [gotests] would like like this:
+Tests, generated with [gotests] would be:
 
 ```golang
 package main
@@ -111,7 +115,7 @@ func Test_generateInts(t *testing.T) {
 }
 ```
 
-So, generated tests handle the channel like a common return value. The intention is however to compare and match the values going through the channel. One possible solution might be like this:
+So, generated tests handle the channel like a common return value. The intention is however to compare and match the values going through the channel. One possible solution might be:
 
 ```golang
 package main
@@ -148,6 +152,8 @@ func Test_generateInts(t *testing.T) {
 }
 ```
 
+# Generic solution with helper function
+
 It would be nice to have a helper test function for such cases. Real generic example would required generics :-) (see [FAQ] and [proposal] on this topic):
 
 ```golang
@@ -158,7 +164,7 @@ import (
 	"testing"
 )
 
-func getValues(c GENERIC-TYPE) []GENERIC-TYPE {
+func getValues(c <-chan GENERIC-TYPE) []GENERIC-TYPE {
 	var r []GENERIC-TYPE
 
 	for i := range c {
@@ -190,7 +196,7 @@ func Test_generateInts(t *testing.T) {
 }
 ```
 
-As we do not have generics yet available, it might look like this (please take it as POC code only):
+As generics are not available yet, we might take the approach with empty interfaces and [type assertion] (please take it as POC code only):
 
 ```golang
 package main
@@ -268,7 +274,7 @@ func Test_generateInts(t *testing.T) {
 }
 ```
 
-Note, in `getValues` we can't use the `<-chan interface{}` as its completely different type then `<-chan int`. We have to match the channel with empty interface completely and make the [type assertion].
+Note, in `getValues` we can't use the `<-chan interface{}` as its completely different type then `<-chan int`. We have to match the channel with empty interface completely (`interface{}`) and make the [type assertion].
 
 
 # See too
