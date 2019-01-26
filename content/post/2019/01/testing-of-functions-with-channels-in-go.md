@@ -219,11 +219,11 @@ func getValues(c interface{}) []interface{} {
 		}
 	}
 
-	switch c.(type) {
+	switch ch := c.(type) {
 	case <-chan int:
-		fAddInts(c.(<-chan int))
+		fAddInts(ch)
 	case <-chan string:
-		fAddStr(c.(<-chan string))
+		fAddStr(ch)
 	default:
 		panic("Not supported")
 	}
