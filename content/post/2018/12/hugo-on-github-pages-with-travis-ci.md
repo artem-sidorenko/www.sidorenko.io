@@ -105,7 +105,7 @@ script:
 
 deploy:
   - provider: script
-    script: ./deploy.sh
+    script: bash deploy.sh
     skip_cleanup: true
     on:
       branch: source # or master if you are using the two-repository approach
