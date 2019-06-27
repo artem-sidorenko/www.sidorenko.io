@@ -17,7 +17,6 @@ Location: [Bonn, Germany](http://www.openstreetmap.org/node/26373169#map=8/50.54
 
 # On the Web
  - Email [artem@posteo.de](mailto: artem@posteo.de) (GPG key id [8B4B87B9](http://pgp.mit.edu/pks/lookup?op=get&search=0xF29AA8AD8B4B87B9))
- - XMPP [artem@jabber.ccc.de](xmpp:artem@jabber.ccc.de)
  - [keybase.io](https://keybase.io/artem_sidorenko)
  - [Xing](http://www.xing.com/profile/Artem_Sidorenko)
  - [LinkedIn](http://de.linkedin.com/pub/artem-sidorenko/79/398/230/)
