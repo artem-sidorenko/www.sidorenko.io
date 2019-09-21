@@ -15,7 +15,7 @@ This post describes the full encrypted installtion of proxmox hypervisor with un
 - [Download debian 10 installation iso](https://www.debian.org/distrib/netinst) and boot the installer
 - Run the installation and choose the `encrypted LVM` partitioning type
 - Your final partitioning scheme should look like below
-![](partitioning_scheme.png)
+![Partitioning scheme](partitioning_scheme.png)
 - For the first boot process you will have to give your password via physical console in order to boot the system
 - Login via ssh to the system
 
