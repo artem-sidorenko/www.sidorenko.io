@@ -214,7 +214,7 @@ Lets have a detailed look to the VXLAN layer:
 
 You can see the VNI - VXLAN Network Identifier header. This header is responsible for differentiation between different virtual networks.
 
-Go ahead and create VXLAN tunnels between our VMs (you might be surprised about `--` command syntax, I'll cover it later): 
+Go ahead and create VXLAN tunnels between our VMs (you might be surprised about `--` command syntax, I'll cover it later):
 
 ```shell
 # node1
@@ -434,7 +434,7 @@ Now have a look to the existing bridges. You can see, when you create a new brid
 [root@node1 ~]# ip link | grep tenant
 5: tenantA: <BROADCAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
 6: tenantB: <BROADCAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
-``` 
+```
 
 You can find much more details in the [post of Arthur Chiao](https://arthurchiao.github.io/blog/ovs-deep-dive-6-internal-port/).
 
@@ -497,7 +497,7 @@ The `--id` commands within mirror configuration provide aliases to the particula
        select_vlan: set of up to 4,096 integers, in range 0 to 4,095
               VLANs on which packets are selected for mirroring.  An empty set selects packets  on
               all VLANs.
-              
+
    Mirroring Destination Configuration:
        These columns are mutually exclusive.  Exactly one of them must be nonempty.
 
@@ -517,7 +517,7 @@ Please keep in mind, you can't mirror patch ports (see [this post from Arthur Ch
 
 ## Patch port
 
-Patch ports are similar to the physical cable interconnecting two switches (or to the veth pair plugged into both Open vSwitch bridges). 
+Patch ports are similar to the physical cable interconnecting two switches (or to the veth pair plugged into both Open vSwitch bridges).
 
 Let's introduce a new bridge `tenantC` with one internal port and connect this bridge with `tenantA` bridge via patch ports together. In this setup it should be possible to reach tenantC internal port IP addresses between node1 and node2 because of existing patch connection - the inter-node communication goes through `tenantA` bridge and its VXLAN interconnection.
 
@@ -549,7 +549,7 @@ pipe 2
                           add-port tenantA patchA --\
                           set interface patchC type=patch options:peer=patchA --\
                           set interface patchA type=patch options:peer=patchC
-                          
+
 [root@node2 ~]# ovs-vsctl add-port tenantC patchC --\
                           add-port tenantA patchA --\
                           set interface patchC type=patch options:peer=patchA --\
@@ -734,6 +734,6 @@ In the next post I'm going to cover OpenFlow with Open vSwitch and then switch t
 [Overlay Tunneling with Open vSwitch - GRETAP, VXLAN, Geneve, GREoIPsec]: https://costiser.ro/2016/07/07/overlay-tunneling-with-openvswitch-gre-vxlan-geneve-greoipsec/
 [Geneve]: https://costiser.ro/2016/07/07/overlay-tunneling-with-openvswitch-gre-vxlan-geneve-greoipsec/#geneve
 [GREoIPsec]: https://costiser.ro/2016/07/07/overlay-tunneling-with-openvswitch-gre-vxlan-geneve-greoipsec/#greoipsec
-[OVS Deep Dive 1: vswitchd]: https://arthurchiao.github.io/blog/ovs-deep-dive-1-vswitchd/ 
-[MTU Considerations for VXLAN]: https://keepingitclassless.net/2014/03/mtu-considerations-vxlan/
+[OVS Deep Dive 1: vswitchd]: https://arthurchiao.github.io/blog/ovs-deep-dive-1-vswitchd/
+[MTU Considerations for VXLAN]: https://oswalt.dev/2014/03/mtu-considerations-for-vxlan/
 [Jumbo frames]: https://en.wikipedia.org/wiki/Jumbo_frame
